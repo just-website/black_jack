@@ -1,0 +1,40 @@
+.popup {
+  display: none;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  background-color: #cccccc;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.popup button {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 30px 90px;
+  font-size: 30px;
+  border: 3px solid #a8a8a8;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(215, 215, 215);
+}
+
+.popup button:active {
+  background-color: #b6b6b6;
+}
+
+.popup--active {
+  display: block;
+}
