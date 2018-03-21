@@ -75,8 +75,35 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 40px;
   color: #ffffff; }
+
+.score__hand--player,
+.score__hand--computer {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%; }
+
+.score__hand--computer {
+  text-align: right; }
+
+.score__controls {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center; }
+  .score__controls button {
+    width: 150px;
+    padding: 15px 30px;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid green;
+    background-color: #ffffff;
+    font-size: 16px; }
+    .score__controls button:active {
+      background-color: #cccccc; }
 
 .popup {
   display: none;
@@ -97,20 +124,22 @@ body {
   font-size: 30px; }
 
 .popup button {
+  color: #ffffff;
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 30px 90px;
   font-size: 30px;
-  border: 3px solid #a8a8a8;
+  border: 4px solid;
+  border-color: #26794c;
   border-radius: 50px;
   cursor: pointer;
   outline: none;
-  background-color: #d7d7d7; }
+  background-color: #32a064; }
 
 .popup button:active {
-  background-color: #b6b6b6; }
+  background-color: #206640; }
 
 .popup--active {
   display: block; }
