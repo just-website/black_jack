@@ -77,7 +77,7 @@ function addCard(func, obj) {
   var card = document.createElement('div');
   card.value = func();
   card.classList.add('hand__card');
-  card.style.backgroundImage = 'url("../img/Cards/' + card.value + '.png")';
+  card.style.backgroundImage = 'url("img/Cards/' + card.value + '.png")';
   obj.appendChild(card);
 }
 
